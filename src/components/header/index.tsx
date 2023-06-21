@@ -1,4 +1,7 @@
-import { Container, LogoContainer, ButtonContainer, ButtonIcon } from "./style";
+import { Container, LogoContainer, 
+    ButtonContainer, ButtonIcon, 
+    SearchContainer, SearchInputContainer,
+    SearchInput } from "./style";
 import HamburguerIcon from '../../assets/hamburger.png';
 import Logo from '../../assets/YouTube-Logo_2.png'
 
@@ -7,7 +10,7 @@ function Header() {
         <Container>
             <LogoContainer>
                 <ButtonContainer>
-                    <ButtonIcon alt='' src={HamburguerIcon} />
+                    <ButtonIcon alt="" src={HamburguerIcon}  />
                 </ButtonContainer>
                 <img
                     style={{ cursor: 'pointer', width: '100px' }} 
@@ -15,6 +18,13 @@ function Header() {
                     src={Logo}
                 />
             </LogoContainer>
+
+            <SearchContainer>
+                <SearchInputContainer>
+                    <SearchInput placeholder="pesquisar" />
+                </SearchInputContainer>
+            </SearchContainer>
+
         </Container>
     )
 }

@@ -17,6 +17,7 @@ export const LogoContainer = styled.div`
     align-items: center;
 `;
 
+
 export const ButtonContainer = styled.div`
     background-color: blue;
     width: 40px;
@@ -29,10 +30,33 @@ export const ButtonContainer = styled.div`
     cursor: pointer;
     
     :hover {
-            background-color: gray;
-        }
+        background-color: gray;
+     }
+    
 `;
 
 export const ButtonIcon = styled.img`
     width: 20px;
+`;
+
+export const SearchContainer = styled.div`
+    display: flex;
+
+`;
+export const SearchInputContainer = styled.div`
+    width: 450px;
+    height: 35px;
+    border: 1px solid #d3d3d3;
+    border-radius: 40px 0 0 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+
+`;
+export const SearchInput = styled.input`
+    width: 100%;
+    height: 25px;
+    outline: none;
+    border: none;
+
 `;
